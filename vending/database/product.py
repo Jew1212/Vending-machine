@@ -8,7 +8,7 @@ class Product(db.Model):
     product_id = db.Column(db.String(100), unique=True)
     name = db.Column(db.String(100), unique=True)
     quantity = db.Column(db.Integer, unique=True)
-    price = db.Column(db.Float, unique=True)
+    price = db.Column(db.Float)
 
     def __init__(self, machine_id, product_id, name, quantity, price) -> None:
         self.machine_id = machine_id

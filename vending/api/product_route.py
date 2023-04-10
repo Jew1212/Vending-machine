@@ -32,6 +32,7 @@ def all_product():
             "id": i.id,
             "machine_id": i.machine_id,
             "product_id": i.product_id,
+            "time": i.time,
             "name": i.name,
             "quantity": i.quantity,
             "price": i.price,

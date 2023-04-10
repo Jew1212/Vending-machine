@@ -9,7 +9,7 @@ def create_app() -> Flask:
     """High level support for doing this and that."""
     application: Flask = Flask(__name__)
 
-    application.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///test10.sqlite"
+    application.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///test12.sqlite"
     application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
     db.init_app(application)
